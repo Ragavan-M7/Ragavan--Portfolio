@@ -54,7 +54,7 @@ function Resume() {
             {/* Download Button */}
             <div className="text-center mt-5">
               <a
-                href="/ragavan-resume.pdf"
+                href="/Ragavan_resume.pdf"
                 download
                 className="btn btn-outline-primary px-4 py-2 fs-5 fw-bold download-btn animate__animated animate__zoomIn"
               >
