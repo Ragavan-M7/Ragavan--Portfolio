@@ -1,0 +1,250 @@
+/* src/assets/css/about.css */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Section background and layout */
+#about {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Headings */
+#about h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+#about h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* List items */
+#about ul li {
+  color: #343a40;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Button */
+#about button {
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#about button:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Image float animation */
+.image-bg-wrapper {
+  position: relative;
+  z-index: 1;
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Typing animation for Developer text */
+.typing {
+  display: inline-block;
+  color: #ff006e;
+  white-space: nowrap;
+  border-right: 2px solid #ff006e;
+  overflow: hidden;
+  animation: typing 2s steps(9) 1s infinite alternate,
+    blink 0.7s step-end infinite;
+}
+
+/* Typing + backspacing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch; /* 9 characters in "Developer" */
+  }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Animate list items one by one */
+#about ul li {
+  color: #343a40;
+  font-size: 1rem;
+  line-height: 1.8;
+  list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+  opacity: 0;
+  animation: fadeInList 1s ease forwards;
+}
+
+/* Bullet as animated dot */
+#about ul li::before {
+  /* content: "•"; */
+  position: absolute;
+  left: 0;
+  color: #0d6efd;
+  font-weight: bold;
+  animation: popDot 0.4s ease-in;
+}
+
+/* Keyframe for list fade-in */
+@keyframes fadeInList {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Dot pop animation */
+@keyframes popDot {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Custom styled animated list */
+.about-list > li {
+  list-style: none !important; /* Remove bullet points */
+  padding-left: 0; /* Remove default left padding */
+}
+
+.about-list li {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 1.2rem; /* Change font size */
+  color: #333333; /* Change text color to dark gray */
+  margin-bottom: 1.5rem; /* Add spacing between list items */
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  opacity: 0;
+  animation: fadeInList 0.6s ease forwards;
+  position: relative;
+}
+
+/* Animate each item on scroll-in */
+@keyframes fadeInList {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Optional: animate icons */
+.about-list i {
+  animation: iconBounce 1s ease-in-out infinite alternate;
+  font-size: 1.5rem; /* Adjust icon size */
+  margin-right: 1rem; /* Space between icon and text */
+}
+
+@keyframes iconBounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+.btn-resume {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-resume:hover {
+  background-color: #084298;
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+.resume-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* image styles  */
+.image-pro-wrapper {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  animation: floatUp 4s ease-in-out infinite;
+  border-radius: 12px;
+}
+
+.pro-img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px; /* maintain aspect ratio */
+  object-fit: contain; /* show full image */
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.image-pro-wrapper:hover .pro-img {
+  transform: scale(1.03);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

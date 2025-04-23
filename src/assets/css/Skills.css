@@ -1,0 +1,40 @@
+.skills-section {
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: floatCard 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skill-card.animate-visible {
+    opacity: 1;
+  }
+  
+  @keyframes floatCard {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
