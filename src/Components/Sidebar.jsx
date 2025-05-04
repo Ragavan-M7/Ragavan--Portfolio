@@ -18,7 +18,7 @@ function Sidebar({ onLinkClick }) {
       <p className="text-white mt-2">Full Stack Developer</p>
 
       {/* Social Links */}
-      <div className="d-flex gap-3 mb-3 mt-3">
+      <div className="d-flex gap-3 mb-3 mt-1">
         <a
           href="https://www.linkedin.com/in/ragavan15/"
           target="_blank"
@@ -26,7 +26,7 @@ function Sidebar({ onLinkClick }) {
         >
           <i className="fab fa-linkedin fa-lg text-white"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
           <i className="fab fa-instagram fa-lg text-white"></i>
         </a>
         <a
@@ -35,11 +35,11 @@ function Sidebar({ onLinkClick }) {
           rel="noreferrer"
         >
           <i className="fab fa-facebook fa-lg text-white"></i>
-        </a>
+        </a> */}
       </div>
 
       {/* Divider */}
-      <div className="border-top border-danger mt-4 w-75"></div>
+      <div className="border-top border-danger mt-2 w-25"></div>
 
       {/* Nav Links */}
       <nav className="nav flex-column text-center w-100 mt-3">
@@ -47,7 +47,6 @@ function Sidebar({ onLinkClick }) {
           className="nav-link animate-link"
           href="#about"
           onClick={onLinkClick}
-
         >
           <i className="fas fa-user me-2"></i> About Me
         </a>

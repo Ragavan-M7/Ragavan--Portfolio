@@ -29,12 +29,12 @@ function Footer() {
           <a href="https://www.linkedin.com/in/ragavan15/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/profile.php?id=100041539543868" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook-f"></i>
-          </a>
+          </a> */}
         </div>
 
         {/* Copyright */}

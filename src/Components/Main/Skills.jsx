@@ -7,6 +7,7 @@ const skills = [
   { name: "Django", icon: "fas fa-leaf", color: "#092E20" },
   { name: "Bootstrap", icon: "fab fa-bootstrap", color: "#7952B3" },
   { name: "SQL", icon: "fas fa-database", color: "#003B57" },
+  { name: "JavaScript", icon: "fab fa-js", color: "#F0DB4F" },
   { name: "HTML", icon: "fab fa-html5", color: "#E44D26" },
   { name: "CSS", icon: "fab fa-css3-alt", color: "#264de4" },
   { name: "GitHub", icon: "fab fa-github", color: "#171515" },

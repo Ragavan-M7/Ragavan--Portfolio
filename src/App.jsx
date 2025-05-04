@@ -13,7 +13,7 @@ function App() {
     <div className="app-wrapper d-flex">
       {/* Toggle Button (mobile only) */}
       <button
-        className="btn btn-dark d-md-none position-fixed top-0 start-0 m-2 z-3"
+        className="btn  d-md-none position-fixed top-0 start-0 m-2 z-3" style={{backgroundColor:"white"}}
         onClick={toggleSidebar}
       >
         <i className="fas fa-bars"></i>
@@ -28,7 +28,7 @@ function App() {
 
       {/* Main Content */}
       <div className="main-content flex-grow-1 p-3">
-        <Maincontent />
+        <Maincontent hideLinkClick={hideSidebar}/>
       </div>
     </div>
   );
