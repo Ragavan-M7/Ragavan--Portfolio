@@ -26,16 +26,6 @@ function Sidebar({ onLinkClick }) {
         >
           <i className="fab fa-linkedin fa-lg text-white"></i>
         </a>
-        {/* <a href="https://instagram.com" target="_blank" rel="noreferrer">
-          <i className="fab fa-instagram fa-lg text-white"></i>
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100041539543868"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className="fab fa-facebook fa-lg text-white"></i>
-        </a> */}
       </div>
 
       {/* Divider */}
@@ -50,13 +40,19 @@ function Sidebar({ onLinkClick }) {
         >
           <i className="fas fa-user me-2"></i> About Me
         </a>
-
         <a
           className="nav-link animate-link"
           href="#skills"
           onClick={onLinkClick}
         >
           <i className="fas fa-laptop-code me-2"></i> Skills
+        </a>
+        <a
+          className="nav-link animate-link"
+          href="#projects"
+          onClick={onLinkClick}
+        >
+          <i className="fas fa-folder-open me-2"></i> Projects
         </a>
         <a
           className="nav-link animate-link"
